@@ -1,0 +1,171 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#profile-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Profile Card */
+#profile-card {
+    text-align: center;
+    padding: 40px;
+}
+
+#profile-picture {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #007BFF;
+}
+
+#profile-heading {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#profile-description {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+#discover-link {
+    font-weight: bold;
+    color: #000000; /* White text */
+    background-color: #FFEB3B; /* Light Yellow background */
+    padding: 10px 20px; /* Padding for spacing */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.2em; /* Slightly larger text */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    text-align: center;
+    display: inline-block; /* Ensures it behaves like a button */
+    text-decoration: none; /* Removes underline */
+}
+
+#discover-link:hover {
+    background-color: #FFC107; /* Darker Yellow on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Interests Section */
+#interests {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.interest-card {
+    width: 30%;
+}
+
+@media (max-width: 768px) {
+    .interest-card {
+        width: 48%;
+    }
+}
+
+@media (max-width: 480px) {
+    .interest-card {
+        width: 100%;
+    }
+}
+
+/* Social Links */
+#social-links {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#social-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#social-links a {
+    font-size: 2em;
+    color: #333;
+}
+
+#social-links a:hover {
+    color: #007BFF;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #profile-heading {
+        font-size: 2em;
+    }
+
+    #profile-picture {
+        width: 120px;
+        height: 120px;
+    }
+
+    #profile-description {
+        font-size: 1em;
+    }
+
+    #social-links ul {
+        flex-direction: column;
+    }
+
+    #social-links a {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #profile-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #profile-card {
+        padding: 20px;
+    }
+
+    #profile-heading {
+        font-size: 1.8em;
+    }
+
+    #profile-picture {
+        width: 100px;
+        height: 100px;
+    }
+
+    #social-links a {
+        font-size: 1.5em;
+    }
+}
+
+
+
